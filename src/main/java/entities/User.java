@@ -1,8 +1,12 @@
 package entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable {
 
     private  static final long serialVersionUID = 1L;
@@ -63,10 +67,16 @@ public class User implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User user)) return false;
-        return getId().equals(user.getId());
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        User other = (User) obj;
+        if (id == null) {
+            if (other.id != null) return false;
+
+        } else if (!id.equals(other.id)) return false;
+            return true;
     }
 
     @Override

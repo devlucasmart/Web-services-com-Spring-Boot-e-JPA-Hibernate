@@ -13,14 +13,14 @@
   <property name="project-type" value="classpath" />
   <property name="hide-externals" value="true" />
   <classpath>
-    <classpathentry kind="lib" path="target/classes" module="teste" displaymodule="teste" />
+    <classpathentry kind="lib" path="target/classes" module="web-services-spring-boot-jpa-hibernate" displaymodule="web-services-spring-boot-jpa-hibernate" />
   </classpath>
   <pom-root-files />
   <modules>
-    <module name="teste" kind="ide-project" />
+    <module name="web-services-spring-boot-jpa-hibernate" kind="ide-project" />
   </modules>
   <modules-in-scope>
-    <module name="teste" />
+    <module name="web-services-spring-boot-jpa-hibernate" />
   </modules-in-scope>
   <excludes>
     <exclude expression="*.*&amp;amp;*" active="true" />
