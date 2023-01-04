@@ -1,10 +1,10 @@
-package com.estudo.teste;
+package com.products.vendas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TesteApplicationTests {
+class VendasApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,12 @@
-package com.estudo.teste;
+package com.products.vendas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
-public class TesteApplication {
+public class VendasApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TesteApplication.class, args);
+		SpringApplication.run(VendasApplication.class, args);
 	}
 
 }
