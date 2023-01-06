@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,12 +29,14 @@ public class Order implements Serializable {
     private Instant moment;
     @Autowired
     private Integer orderStatus;
-
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Person client;
+    @OneToMany(mappedBy = "id.order")
+    private Set<OrderItem> items = new HashSet<>();
 
     public Order(OrderStatus orderStatus) {
+
         setOrderStatus(orderStatus);
     }
 
